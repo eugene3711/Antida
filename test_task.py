@@ -2,10 +2,6 @@ import math
 
 def solve(a,b,c):
 
-  a= float(a)
-  b= float(b)
-  c= float(c)
-
   print(f"Ваше уравнение: \n \t {a}x^2+{b}x+{c}=0")
 
   disk = b*b-4*a*c
