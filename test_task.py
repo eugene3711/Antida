@@ -13,7 +13,7 @@ def solve(a,b,c):
     print("Нет действительных корней")
   elif disk == 0:
     x = -b/2*a
-    print("Единственный корень: {:.3f}".format(x))
+    print("Единственный корень: х = {:.3f}".format(x))
   else:
     x1 = (-b+math.sqrt(disk))/(2*a)
     x2 = (-b-math.sqrt(disk))/(2*a)
@@ -45,8 +45,8 @@ def getNumber(coef):
 
 proceed = True
 while (proceed):
-  print("Квадратное уравненеи имеет вид:\n\t ax^2+bx+c=0")
-  print
+  print("Квадратное уравнение имеет вид:\n\t ax^2+bx+c=0")
+  
   a = getNumber("a")
   
   b = getNumber("b")
@@ -56,6 +56,6 @@ while (proceed):
 
   solve(a,b,c)
   
-  proceed = bool(input("Введите что-нибудь, чтобы посчитать еще \n или оставьте пустой, чтобы выйти \n"))
+  proceed = bool(input("Введите что-нибудь, чтобы посчитать еще \n или оставьте строку пустой, чтобы выйти \n"))
   if proceed == False:
     print("Всего вам доброго, учите математику и Python!")
