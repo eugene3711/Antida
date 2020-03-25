@@ -6,12 +6,12 @@ def solve(a,b,c):
   b= float(b)
   c= float(c)
 
-  print(f"Ваше уравнение: \n \t {a}x^2+{b}x+{c}=0"
-  )
+  print(f"Ваше уравнение: \n \t {a}x^2+{b}x+{c}=0")
 
   disk = b*b-4*a*c
 
   print("Дискриминант: {:.3f}".format(disk))
+
   if disk < 0:
     print("Нет действительных корней")
   elif disk == 0:
