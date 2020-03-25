@@ -1,5 +1,6 @@
 import math
 
+#функция, решающая уравнение
 def solve(a,b,c):
 
   print(f"Ваше уравнение: \n \t {a}x^2+{b}x+{c}=0")
@@ -20,7 +21,8 @@ def solve(a,b,c):
     
 
 
-
+# функция ввода чисел, проверяет их, переводит ввод из str во float 
+# дает право 5 неверных вводов на каждый коэффициент
 def getNumber(coef):
   patience = 5
   while (patience > 0):
